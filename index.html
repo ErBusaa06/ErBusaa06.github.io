@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio – Miguel Ángel Busatori Blanco</title>
 
-    <!-- Tipografía moderna -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Tipografía profesional -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -14,29 +14,50 @@
     <style>
         body {
             margin: 0;
-            background: #f4f6f9;
-            font-family: 'Poppins', sans-serif;
-            color: #333;
+            background: #0d1117;
+            font-family: 'Inter', sans-serif;
+            color: #e6edf3;
         }
 
         /* Header */
         header {
-            background: linear-gradient(135deg, #4e73df, #1cc88a);
-            color: white;
+            background: #161b22;
+            padding: 70px 20px;
             text-align: center;
-            padding: 60px 20px;
-            border-radius: 0 0 25px 25px;
+            border-bottom: 1px solid #30363d;
         }
 
         header h1 {
-            font-size: 2.8rem;
+            font-size: 3rem;
             margin: 0;
-            font-weight: 600;
+            font-weight: 700;
+            color: #58a6ff;
         }
 
         header p {
             font-size: 1.2rem;
-            opacity: 0.9;
+            margin-top: 10px;
+            color: #8b949e;
+        }
+
+        /* Sección Sobre mí */
+        .about {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #161b22;
+            border-radius: 12px;
+            border: 1px solid #30363d;
+        }
+
+        .about h2 {
+            color: #58a6ff;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            color: #c9d1d9;
+            line-height: 1.6;
         }
 
         /* Contenedor */
@@ -55,34 +76,35 @@
 
         /* Tarjetas */
         .card {
-            background: white;
-            border-radius: 15px;
+            background: #161b22;
+            border-radius: 12px;
             padding: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform .2s, box-shadow .2s;
+            border: 1px solid #30363d;
+            transition: transform .2s, border-color .2s;
         }
 
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+            border-color: #58a6ff;
         }
 
         .card h3 {
             margin-top: 0;
-            font-size: 1.4rem;
-            color: #4e73df;
+            font-size: 1.3rem;
+            color: #58a6ff;
         }
 
         .card p {
             font-size: 0.95rem;
             margin-bottom: 15px;
+            color: #c9d1d9;
         }
 
         .card a {
             display: inline-block;
             margin-right: 10px;
             text-decoration: none;
-            color: #1cc88a;
+            color: #3fb950;
             font-weight: 600;
         }
 
@@ -95,9 +117,9 @@
             text-align: center;
             padding: 25px;
             margin-top: 40px;
-            background: #fff;
-            border-top: 1px solid #ddd;
-            color: #666;
+            background: #161b22;
+            border-top: 1px solid #30363d;
+            color: #8b949e;
         }
     </style>
 </head>
@@ -106,11 +128,21 @@
 
 <header>
     <h1>Miguel Ángel Busatori Blanco</h1>
-    <p>Desarrollador de Aplicaciones Multiplataforma</p>
+    <p>Desarrollador de Aplicaciones Multiplataforma · Backend · Web</p>
 </header>
 
+<section class="about">
+    <h2>Sobre mí</h2>
+    <p>
+        Soy un desarrollador en formación especializado en aplicaciones multiplataforma, backend y desarrollo web.
+        Me apasiona crear soluciones funcionales, bien estructuradas y con un enfoque profesional.
+        Actualmente estoy construyendo mi portfolio y ampliando mis conocimientos en APIs, Java, JavaScript,
+        bases de datos y buenas prácticas de desarrollo.
+    </p>
+</section>
+
 <div class="container">
-    <h2 style="text-align:center; margin-bottom: 30px;">Mis Proyectos</h2>
+    <h2 style="text-align:center; margin-bottom: 30px; color:#58a6ff;">Mis Proyectos</h2>
 
     <div class="proyectos-grid">
 
@@ -173,14 +205,15 @@
                 <i class="fa-brands fa-github"></i> Repositorio
             </a>
         </div>
-<!-- Proyecto 6 -->
-<div class="card">
-    <h3>Meetrack API</h3>
-    <p>API REST del proyecto Meetrack. Incluye endpoints, controladores y estructura backend.</p>
-    <a href="https://github.com/ErBusaa06/meetrack-api" target="_blank">
-        <i class="fa-brands fa-github"></i> Repositorio
-    </a>
-</div>
+
+        <!-- Proyecto 6 -->
+        <div class="card">
+            <h3>Meetrack API</h3>
+            <p>API REST del proyecto Meetrack. Incluye endpoints, controladores y estructura backend.</p>
+            <a href="https://github.com/ErBusaa06/meetrack-api" target="_blank">
+                <i class="fa-brands fa-github"></i> Repositorio
+            </a>
+        </div>
 
     </div>
 </div>
