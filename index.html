@@ -1,169 +1,161 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Miguel Ángel Busatori Blanco - Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #1f2937;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    h2 {
-      color: #1f2937;
-      margin-top: 2rem;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-    }
-    .tag {
-      display: inline-block;
-      background: #d1d5db;
-      padding: 0.3rem 0.7rem;
-      margin: 0.2rem;
-      border-radius: 5px;
-      font-size: 0.9rem;
-    }
-    a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio – Miguel Ángel Busatori Blanco</title>
+
+    <!-- Tipografía moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            background: #f4f6f9;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            border-radius: 0 0 25px 25px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Contenedor */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Grid de proyectos */
+        .proyectos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* Tarjetas */
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform .2s, box-shadow .2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            color: #4e73df;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #1cc88a;
+            font-weight: 600;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+            background: #fff;
+            border-top: 1px solid #ddd;
+            color: #666;
+        }
+    </style>
 </head>
+
 <body>
 
-  <header>
+<header>
     <h1>Miguel Ángel Busatori Blanco</h1>
-    <p>Desarrollador de Aplicaciones Multiplataforma · Sevilla, España</p>
-  </header>
+    <p>Desarrollador de Aplicaciones Multiplataforma</p>
+</header>
 
-  <div class="container">
+<div class="container">
+    <h2 style="text-align:center; margin-bottom: 30px;">Mis Proyectos</h2>
 
-    <section>
-      <h2>Objetivo Profesional</h2>
-      <p>
-        Estudiante de 2º DAM en busca de prácticas formativas. Deseo aplicar mis conocimientos en programación y bases de datos en un entorno profesional, con el objetivo de seguir creciendo dentro del sector tecnológico.
-      </p>
-    </section>
+    <div class="proyectos-grid">
 
-    <section>
-      <h2>Experiencia</h2>
-      <h3>Horror Channel_Gameplays (YouTube)</h3>
-      <p>Edición de audio y vídeo, creación de miniaturas, análisis de métricas, moderación y gestión de comunidad.</p>
-      <p><em>Enero 2023 - Actualidad</em></p>
+        <!-- Proyecto 1 -->
+        <div class="card">
+            <h3>Resultados de Aprendizaje (RA)</h3>
+            <p>Proyecto web con HTML, XSLT, JSON y estructura modular. Publicado en GitHub Pages.</p>
+            <a href="https://erbusaa06.github.io/resultados-de-aprendizaje/" target="_blank">
+                <i class="fa-solid fa-globe"></i> Ver proyecto
+            </a>
+            <a href="https://github.com/ErBusaa06/resultados-de-aprendizaje" target="_blank">
+                <i class="fa-brands fa-github"></i> Repositorio
+            </a>
+        </div>
 
-      <h3>EUSA LAB</h3>
-      <p>Desarrollo de aplicaciones multiplataforma con Java, diseño web con HTML/CSS, gestión de bases de datos relacionales y no relacionales.</p>
-      <p><em>Enero 2025 - Mayo 2025</em></p>
-    </section>
+        <!-- Proyecto 2 -->
+        <div class="card">
+            <h3>Calculadora Básica</h3>
+            <p>Aplicación web sencilla desarrollada con HTML, CSS y JavaScript.</p>
+            <a href="https://erbusaa06.github.io/calculadora-basica/" target="_blank">
+                <i class="fa-solid fa-globe"></i> Ver proyecto
+            </a>
+            <a href="https://github.com/ErBusaa06/calculadora-basica" target="_blank">
+                <i class="fa-brands fa-github"></i> Repositorio
+            </a>
+        </div>
 
-    <section>
-      <h2>Formación</h2>
-      <p><strong>Desarrollo de Aplicaciones Multiplataforma</strong> (2024 - 2026)<br>
-      Campus Formativo Cámara de Comercio de Sevilla</p>
+        <!-- Proyecto 3 -->
+        <div class="card">
+            <h3>Zapatería Pedro</h3>
+            <p>Proyecto web con catálogo, estilos personalizados y estructura profesional.</p>
+            <a href="https://erbusaa06.github.io/zapateria-pedro/" target="_blank">
+                <i class="fa-solid fa-globe"></i> Ver proyecto
+            </a>
+            <a href="https://github.com/ErBusaa06/zapateria-pedro" target="_blank">
+                <i class="fa-brands fa-github"></i> Repositorio
+            </a>
+        </div>
 
-      <p><strong>Bachillerato</strong> (2022 - 2024)<br>
-      IES Miguel Servet</p>
-    </section>
+    </div>
+</div>
 
-    <section>
-      <h2>Competencias Técnicas</h2>
-      <p><strong>Lenguajes:</strong></p>
-      <span class="tag">Java</span>
-      <span class="tag">JavaScript</span>
-
-      <p><strong>Bases de datos:</strong></p>
-      <span class="tag">MySQL</span>
-      <span class="tag">Oracle</span>
-
-      <p><strong>Herramientas:</strong></p>
-      <span class="tag">Git</span>
-      <span class="tag">Visual Studio Code</span>
-      <span class="tag">NetBeans</span>
-      <span class="tag">Android Studio</span>
-
-      <p><strong>Desarrollo Web:</strong></p>
-      <span class="tag">HTML</span>
-      <span class="tag">CSS</span>
-      <span class="tag">Frameworks (nivel básico)</span>
-
-      <p><strong>Sistemas Operativos:</strong></p>
-      <span class="tag">Windows</span>
-      <span class="tag">Linux (usuario)</span>
-    </section>
-
-    <section>
-      <h2>Idiomas</h2>
-      <p><strong>Español:</strong> Nativo</p>
-      <p><strong>Inglés:</strong> Avanzado (B2)</p>
-    </section>
-
-    <section>
-      <h2>Aficiones</h2>
-      <ul>
-        <li>Programación y desarrollo de proyectos personales</li>
-        <li>Interés en inteligencia artificial y tecnologías emergentes</li>
-        <li>Videojuegos como medio de análisis técnico y diseño</li>
-        <li>Aprendizaje autodidacta en tecnología</li>
-      </ul>
-    </section>
-
-    <!-- NUEVA SECCIÓN DE PROYECTOS -->
-    <section>
-      <h2>Proyectos</h2>
-      <ul>
-        <li>
-          <strong>Calculadora Básica:</strong>
-          <a href="https://erbusaa06.github.io/calculadora-basica/" target="_blank">
-            https://erbusaa06.github.io/calculadora-basica/
-          </a>
-        </li>
-        <li>
-          <strong>Zapatería Pedro:</strong>
-          <a href="https://erbusaa06.github.io/zapateria-pedro/" target="_blank">
-            https://erbusaa06.github.io/zapateria-pedro/
-          </a>
-        </li>
-        <li> <strong>Lista de Tareas:</strong> <a href="https://erbusaa06.github.io/lista-de-tareas/" target="_blank"> https://erbusaa06.github.io/lista-de-tareas/ </a> </li>
-        <li> <strong>Deportes Busatori (Tienda Virtual):</strong> <a href="https://erbusaa06.github.io/tienda-virtual/" target="_blank"> https://erbusaa06.github.io/tienda-virtual/ </a> </li>
-        <li>
-  <strong>Resultados de Aprendizaje (RA):</strong>
-  <a href="https://erbusaa06.github.io/resultados-de-aprendizaje/" target="_blank">
-    Ver proyecto
-  </a>
-  &nbsp;|&nbsp;
-  <a href="https://github.com/ErBusaa06/resultados-de-aprendizaje" target="_blank">
-    Repositorio en GitHub
-  </a>
-</li>
-
-      </ul>
-    </section>
-
-    <section>
-      <h2>Contacto</h2>
-      <p><strong>Email:</strong> miguelangelbusatori06@gmail.com</p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/ErBusaa06" target="_blank">github.com/ErBusaa06</a></p>
-    </section>
-
-  </div>
+<footer>
+    © 2026 Miguel Ángel Busatori Blanco
+</footer>
 
 </body>
 </html>
